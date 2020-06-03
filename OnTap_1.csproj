@@ -115,6 +115,7 @@
     <Compile Include="master.Master.designer.cs">
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
+    <Compile Include="ohshit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPham.aspx.cs">
       <DependentUpon>SanPham.aspx</DependentUpon>
