@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="OnTap_1.master" %>
+
+<%@ Register Src="~/login.ascx" TagPrefix="uc1" TagName="login" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="master.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="outer">
+            <div id="banner"></div>
+            <div id="main">
+                <div id="left">
+                    <asp:DataList ID="DataList1" runat="server">
+                        <ItemTemplate>
+                            <div style="text-decoration:none">
+                                <asp:LinkButton ID="LinkButton1" CommandArgument='<%#Eval("MaLoai") %>' OnClick="LinkButton1_Click" Text='<%# Eval("TenLoai") %>' runat="server">LinkButton</asp:LinkButton>
+                            </div>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </div>
+                <div id="right">
+                    <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate"></asp:Login>
+                </div>
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                
+                
+            </div>
+        </div>
+    </form>
+</body>
+</html>
