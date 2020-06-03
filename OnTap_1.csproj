@@ -90,6 +90,7 @@
     <Compile Include="ChiTiet.aspx.designer.cs">
       <DependentUpon>ChiTiet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ctest.cs" />
     <Compile Include="GioHang.aspx.cs">
       <DependentUpon>GioHang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
