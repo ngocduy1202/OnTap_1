@@ -1,0 +1,31 @@
+﻿body {
+    width:1500px;
+    margin:auto;
+}
+#outer{
+    width:1500px;
+
+}
+#banner{
+    width:1500px;
+    height:50px;
+    background-color:red;
+}
+#main {
+    width: 1500px;
+    display: block;
+}
+#left{
+    width:20%;
+    float:left;
+    background-color:yellow;
+}
+#right{
+    width:25%;
+    float:right;
+    background-color:mediumpurple;
+}
+#content{
+    width:auto;
+    
+}
